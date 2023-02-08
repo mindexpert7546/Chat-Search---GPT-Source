@@ -16,37 +16,51 @@
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
+         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
 
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
-        android:text="Setting" />
+        android:padding="19dp"
+        android:text="Rate" />
 
     <Button
         android:id="@+id/button7"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         android:text="Contact Us" />
 
     <Button
         android:id="@+id/button8"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
-        android:text="Rate" />
+        android:text="Report an issue" />
 
     <Button
         android:id="@+id/button9"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         android:text="Privacy Policy" />
 
     <Button
         android:id="@+id/button10"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        app:icon="@android:drawable/ic_menu_share"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
-        android:text="share" />
+        android:text="Share with friends" />
 
 </LinearLayout>
