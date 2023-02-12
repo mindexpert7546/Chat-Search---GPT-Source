@@ -10,7 +10,7 @@ android:background="#2196F3"
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/welcome"
         android:layout_width="138dp"
         android:layout_height="53dp"
         android:gravity="center"
@@ -25,7 +25,7 @@ android:background="#2196F3"
         app:layout_constraintVertical_bias="0.079" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/chatnow"
         android:layout_width="240dp"
         android:layout_height="140dp"
         android:text="CHAT NOW"
@@ -37,7 +37,7 @@ android:background="#2196F3"
         app:layout_constraintVertical_bias="0.364" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SETTING"
@@ -45,11 +45,11 @@ android:background="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/chatnow"
         app:layout_constraintVertical_bias="0.951" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -58,20 +58,9 @@ android:background="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/chatnow"
         app:layout_constraintVertical_bias="0.949" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.173"
-        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
