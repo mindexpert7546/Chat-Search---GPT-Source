@@ -1,87 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#03DAC6"
     android:layout_height="match_parent"
-    tools:context=".chatscreen"
-    tools:ignore="ExtraText">
+    tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="289dp"
-        android:layout_height="48dp"
-        android:gravity="center"
-        android:text="ads show"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234"
-        tools:layout_editor_absoluteX="-16dp">
-
-        <TextView
-            android:id="@+id/chatView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:layout_marginStart="5dp"
-            android:padding="5dp"
-            android:text="@string/textview_browser_apis_are_built_into_your_web_browser_and_are_able_to_expose_data_from_the_surrounding_computer_environment_or_do_useful_complex_things_for_example_the_dom_document_object_model_api_allows_you_to_manipulate_html_and_css_creating_removing_and_changing_html_dynamically_applying_new_styles_to_your_page_etc_every_time_you_see_a_popup_window_appear_on_a_page_or_some_new_content_displayed_as_we_saw_above_in_our_simple_demo_for_example_that_s_the_dom_in_action_the_geolocation_api_retrieves_geographical_information_this_is_how_google_maps_is_able_to_find_your_location_and_plot_it_on_a_map_the_canvas_and_webgl_apis_allow_you_to_create_animated_2d_and_3d_graphics_people_are_doing_some_amazing_things_using_these_web_technologies_see_chrome_experiments_and_webglsamples_audio_and_video_apis_like_htmlmediaelement_and_webrtc_allow_you_to_do_really_interesting_things_with_multimedia_such_as_play_audio_and_video_right_in_a_web_page_or_grab_video_from_your_web_camera_and_display_it_on_someone_else_s_computer_try_our_simple_snapshot_demo_to_get_the_idea_note_many_of_the_above_demos_won_t_work_in_an_older_browser_when_experimenting_it_s_a_good_idea_to_use_a_modern_browser_like_firefox_chrome_edge_or_opera_to_run_your_code_in_you_will_need_to_consider_cross_browser_testing_in_more_detail_when_you_get_closer_to_delivering_production_code_i_e_real_code_that_real_customers_will_use_third_party_apis_are_not_built_into_the_browser_by_default_and_you_generally_have_to_grab_their_code_and_information_from_somewhere_on_the_web_for_example_the_twitter_api_allows_you_to_do_things_like_displaying_your_latest_tweets_on_your_website_the_google_maps_api_and_openstreetmap_api_allows_you_to_embed_custom_maps_into_your_website_and_other_such_functionality_note_these_apis_are_advanced_and_we_ll_not_be_covering_any_of_these_in_this_module_you_can_find_out_much_more_about_these_in_our_client_side_web_apis_module_there_s_a_lot_more_available_too_however_don_t_get_over_excited_just_yet_you_won_t_be_able_to_build_the_next_facebook_google_maps_or_instagram_after_studying_javascript_for_24_hours_there_are_a_lot_of_basics_to_cover_first_and_that_s_why_you_re_here_let_s_move_on_what_is_javascript_doing_on_your_page_here_we_ll_actually_start_looking_at_some_code_and_while_doing_so_explore_what_actually_happens_when_you_run_some_javascript_in_your_page_let_s_briefly_recap_the_story_of_what_happens_when_you_load_a_web_page_in_a_browser_first_talked_about_in_our_how_css_works_article_when_you_load_a_web_page_in_your_browser_you_are_running_your_code_the_html_css_and_javascript_inside_an_execution_environment_the_browser_tab_this_is_like_a_factory_that_takes_in_raw_materials_the_code_and_outputs_a_product_the_web_page"
-            android:textColor="@color/black"
-            android:textSize="23dp" />
-    </ScrollView>
-
-    <EditText
-        android:id="@+id/editTextchat"
-        android:layout_width="304dp"
-        android:layout_height="60dp"
-        android:background="@drawable/border"
-
-        android:ems="10"
-        android:hint="@string/enter_your_chat"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="#E80505"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.864" />
-
-    <ImageView
-        android:id="@+id/chatsender"
-        android:layout_width="59dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.87"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_above="@id/bottom_layout"
+        />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="168dp"
-        android:layout_height="49dp"
+        android:id="@+id/wlcm_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:gravity="center"
-        android:text="ads show"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:text="Welcome to Chat Search GPT source\nTry it out now"
+        android:textSize="28dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:id="@+id/bottom_layout">
+
+        <EditText
+            android:id="@+id/chatbox_to_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/chat_sender_button"
+            android:background="@drawable/rounded_corner"
+            android:hint="write here..."
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#1E0303" />
+
+        <ImageButton
+            android:id="@+id/chat_sender_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_send_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
